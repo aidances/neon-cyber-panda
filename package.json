@@ -1,0 +1,16 @@
+{
+  "name": "neoncyberpanda",
+  "version": "1.0.0",
+  "description": "Chatbot AI technology to give your business a competitive edge? Look no further than our ChatGPT OpenAI API template.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run compile:sass && docker-compose up",
+    "compile:sass": "node-sass -i public/scss/ -o public/css  "
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "AIDances.com",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

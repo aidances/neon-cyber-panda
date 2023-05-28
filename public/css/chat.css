@@ -1,0 +1,105 @@
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-right: 10px; }
+  .chat-message .image-generated {
+    cursor: click;
+    padding-right: 50px; }
+    .chat-message .image-generated:hover {
+      opacity: .65; }
+  .chat-message p {
+    background-color: rgba(20, 250, 254, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    align-self: flex-start;
+    cursor: pointer; }
+    .chat-message p:hover {
+      opacity: .8; }
+  .chat-message p.download {
+    width: 88px;
+    text-decoration: underline;
+    text-align: center;
+    color: black; }
+  .chat-message .time {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffe;
+    margin-top: -5px;
+    align-self: flex-start; }
+
+.chat-foooter {
+  color: #fff;
+  text-align: left;
+  opacity: .5px;
+  font-size: 8px;
+  padding: 5px;
+  padding-left: 120px;
+  position: absolute; }
+
+.chat-header {
+  color: #53918d;
+  text-align: center; }
+
+.chat-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(5, 32, 42, 0.65);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 50px; }
+
+.chat-box {
+  max-height: 41vh;
+  min-height: 34vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.chat-message.user p {
+  background-color: #fff;
+  color: #38b6ae;
+  align-self: flex-end; }
+
+.chat-message.user .time {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffe;
+  margin-top: -5px;
+  align-self: flex-end; }
+
+.chat-form {
+  display: flex;
+  margin-top: 20px; }
+  .chat-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    border: none;
+    font-size: 16px; }
+  .chat-form button {
+    padding: 10px 20px;
+    background-color: #50babd;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer; }
+
+.chat-message-warning {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold; }
+
+.chat-message-warning2 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #c6fdf0; }
+
+@media only screen and (max-width: 1280px) {
+  .chat-body.active {
+    margin-left: 355px; } }

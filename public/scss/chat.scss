@@ -1,0 +1,128 @@
+$color_1: #fff;
+$color_2: #53918d;
+$color_3: #38b6ae;
+$color_4: black;
+$color_5: #ffe;
+$color_6: #c6fdf0;
+$background-color_1: rgba(5, 32, 42, 0.65);
+$background-color_2: rgba(20, 250, 254, .5);
+$background-color_3: #fff;
+$background-color_4: #50babd;
+
+.chat-message {
+	.image-generated {
+		cursor: click;
+		padding-right: 50px;
+		&:hover {
+			opacity: .65;
+		}
+	}
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	padding-right: 10px;
+	p {
+		background-color: $background-color_2;
+		color: $color_1;
+		padding: 10px;
+		border-radius: 10px;
+		max-width: 70%;
+		align-self: flex-start;
+		cursor: pointer;
+		&:hover {
+			opacity: .8;
+		}
+	}
+	p.download {
+		width: 88px;
+		text-decoration: underline;
+		text-align: center;
+		color: $color_4;
+	}
+	.time {
+		font-size: 12px;
+		font-weight: bold;
+		color: $color_5;
+		margin-top: -5px;
+		align-self: flex-start;
+	}
+}
+.chat-foooter {
+	color: $color_1;
+	text-align: left;
+	opacity: .5px;
+	font-size: 8px;
+	padding: 5px;
+	padding-left: 120px;
+	position: absolute;
+}
+.chat-header {
+	color: $color_2;
+	text-align: center;
+}
+.chat-container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: $background-color_1;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	margin-top: 50px;
+}
+.chat-box {
+	max-height: 41vh;
+	min-height: 34vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.chat-message.user {
+	p {
+		background-color: $background-color_3;
+		color: $color_3;
+		align-self: flex-end;
+	}
+	.time {
+		font-size: 12px;
+		font-weight: bold;
+		color: $color_5;
+		margin-top: -5px;
+		align-self: flex-end;
+	}
+}
+.chat-form {
+	display: flex;
+	margin-top: 20px;
+	input {
+		flex: 1;
+		padding: 10px;
+		border-radius: 20px;
+		margin: 0 auto;
+		border: none;
+		font-size: 16px;
+	}
+	button {
+		padding: 10px 20px;
+		background-color: $background-color_4;
+		border: none;
+		border-radius: 20px;
+		color: $color_1;
+		font-size: 16px;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+}
+.chat-message-warning {
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.chat-message-warning2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: $color_6;
+}
+@media only screen and (max-width : 1280px) {
+	.chat-body.active {
+		margin-left: 355px;
+	}
+}

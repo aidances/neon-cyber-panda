@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>[[titleMessageToken]]</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/chat.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/sidebar-toggle.css">
+  <meta charset="UTF-8" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC6F036P9C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MC6F036P9C');
+  </script>
+</head>
+
+<body id="main-body">
+  <!-- The following text uses the Orbitron font, which is licensed under the SIL Open Font License. -->
+
+
+  <div id="sidebar-menu" class="active sidebar">
+    <div class="sidebar-content">
+      <h2>Menu</h2>
+      [[modelOptionsHtmlToken]]
+    </div>
+  </div>
+
+
+  <!-- start chat -->
+  <div id="chat-body" class="chat-body active">
+
+
+    <!-- start chat-container sections -->
+    <div class="chat-container ">
+
+      <!-- start toggle sidebar button -->
+      <div class="sidebar-toggle" onclick="toggleSidebarMenu()">
+        <span class="icon"></span>
+      </div>
+      <!-- /end toggle sidebar button -->
+
+      <!-- start logo -->
+      <div class="logo-container">
+        <h1 class="logo">[[appNameToken]]</h1>
+
+        <!-- <img src="image/logo3.png" /> -->
+      </div>
+      <!-- end logo -->
+
+
+
+      <!-- start extensible: content placeholders -->
+      <div class="hidden" id="error-message"> </div>
+      <div id="chat-messages" class="chat-box"></div>
+      <!-- /end extensible: content placeholders -->
+
+      <!-- start chat-form sections -->
+      <form class="chat-form" id="chat-form">
+        <input id="chat-input" type="text" placeholder="[[inputMessageToken]]">
+        <button id="chat-submit-button" type="submit">[[submitMessageToken]]</button>
+      </form>
+      <!-- /end chat-form sections -->
+    </div>
+
+    <div class="chat-foooter">
+      <small> [[footerToken]] </small>
+    </div>
+
+
+    <!-- /end chat-container sections -->
+    <div>
+    </div>
+
+
+
+  </div>
+  <!-- /end chat -->
+
+
+  <!-- start script sections -->
+  <script>
+    window.neoncyberpanda = [[configToken]] 
+  </script>
+  <script src="js/dom-definition.js"></script>
+  <script src="js/handler/chat-handler.js"></script>
+  <script src="js/handler/sidebar-handler.js"></script>
+  <script src="js/handler/input-handler.js"></script>
+  <script src="js/connector/openai-connector.js"></script>
+  <script src="js/initialize.js"></script>
+
+  <!-- /end script sections -->
+</body>
+
+</html>
